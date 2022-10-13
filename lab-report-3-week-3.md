@@ -86,12 +86,15 @@ Seperated by s= after the ?
 **Test 1**
 
 **Failure Inducing Input**
+
 ![image](FirstTestCode.png)
 
 **Symptoms**
+
 ![image](FirstTestSymptom.png)
 
 **Bug Fix**
+
 ![image](FirstTestFix.png)
 
 The Failure inducing input for ReverseInPlace() was an input of the array {1,2,3}; When I expected {3,2,1}, the Symptom was {3,2,3}. This tells me that there is a bug in the way the code assigns the values to the position on the array. Upon further inspection the bug was that the code already assigned values within the same array so when it got to the point of switching the first and last variable it had already been overridden with 3 so 3 stayed as the last number.
@@ -99,12 +102,15 @@ The Failure inducing input for ReverseInPlace() was an input of the array {1,2,3
 **Test 2**
 
 **Failure Inducing Input**
+
 ![image](SecondTest.png)
 
 **Symptoms**
+
 ![image](SecondTestSymptom.png)
 
 **Bug Fix**
+
 ![image](SecondTestFix.png)
 
 The Failure inducing input for reversed() is {1,2,3}. When I expected a new Array with the values {1,2,3} I got the symptom i got was that it returned 0 and the first index. This tells me there is probably a bug with how an array gets set with values.
