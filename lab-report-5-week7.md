@@ -8,22 +8,24 @@ In DocSearchServer.java, add a new line right before File[] paths = f.listFiles(
 /File[] <Enter> i <Enter> <Escape> k i System.out.println(f.toString() + “. It is a directory.”); <Escape> :wq <Enter>
 ```
 
+First find the location of File[]
 ```
 /File[] <Enter>
 ```
 
 ![image](vim1.png)
 
+Then enter insert mode add a new line exit insert move up and then enter insert again
 ```
  i <Enter> <Escape> k i 
 ```
 ![image](vim2.png)
-
+Write the line that adds the print statement
 ```
 System.out.println(f.toString() + “. It is a directory.”); <Escape>
 ```
 ![image](vim3.png)
-
+Save your work
 ```
 :wq <enter>
 ```
